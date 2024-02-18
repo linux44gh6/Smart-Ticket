@@ -13,10 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <style>
     .fontFmali {
         font-family: "Raleway", sans-serif;
+    }
+    .inter{
+        font-family: "Inter", sans-serif;
     }
 </style>
 
@@ -110,7 +116,7 @@
                             <img src="images/cupon-devider.png" alt="">
                         </div>
                         <div class="flex flex-col justify-center lg:px-10">
-                            <h1 class="text-3xl font-bold">Couple20</h1>
+                            <h1 class="text-3xl font-bold">Couple 20</h1>
                             <p class="text-[20px]">Coupon Code</p>
                         </div>
                     </div>
@@ -143,8 +149,8 @@
                         </div>
 
                         <div class="">
-                            <h1 class="flex items-center gap-3 text-[#1dd100] text-2xl font-bold"><span><img
-                                        src="images/seat-green.png" alt=""></span><span>40</span> <span>Seats
+                            <h1 class="flex items-center gap-3 text-[#1dd100] text-2xl font-bold inter"><span><img
+                                        src="images/seat-green.png" alt=""></span><span id="total-seat1">40</span> <span>Seats
                                     left</span></h1>
                         </div>
 
@@ -159,7 +165,7 @@
                         </div>
                         <div class="text-center">
                             <img src="images/fare.png" alt="">
-                            <h1 class="text-2xl font-bold">500 Taka</h1>
+                            <h1 class="text-2xl font-bold inter">550 Taka</h1>
                             <p class="font-bold text-gray-400">Per Seat</p>
                         </div>
                     </div>
@@ -173,7 +179,7 @@
                     </div>
                     <div class="flex justify-between">
                         <h1 class="font-bold text-gray-400 cursor-pointer">Departure Time</h1>
-                        <h1 class="font-bold">9:00 AM</h1>
+                        <h1 class="font-bold inter">9:00 AM</h1>
                     </div>
                     <div class="flex justify-around">
                         <button class="btn">Boarding Point - Laxmipur</button>
@@ -275,7 +281,7 @@
                     <h1 class="text-2xl font-bold mb-5">Select Your Seat</h1>
                     <div class="flex justify-around mb-5">
                       <div id="seat-booked">
-                        <h1 class="text-xl font-bold">seat<span id="totalBookedSeat" class="bg-[#1dd100] px-2 text-white rounded-sm">0</span></h1>
+                        <h1 class="text-xl font-bold inter">seat<span id="totalBookedSeat" class="bg-[#1dd100] px-2 text-white rounded-sm">0</span></h1>
                       </div>
                       <div id="seat-class">
                         <h1 class="text-xl font-bold">Class</h1>
@@ -286,24 +292,28 @@
                     </div>
                     <div class="flex justify-between lg:px-14 mb-5">
                         <h1 class="text-xl font-bold" >Total Price</h1>
-                        <h1 class="text-xl font-bold">BDT:<span>0</span> </h1>
+                        <h1 class="text-xl font-bold inter">BDT:<span id="totalCost">0</span> </h1>
                     </div>
                     <div class="flex justify-between lg:px-20 mb-5">
-                        <input disabled class="px-3" type="text" name="" id="cupon-field" placeholder="do you have copupon?" >
-                        <button class="btn bg-[#1DD100] px-10 font-bold text-xl text-white hover:bg-[#1dd100]" disabled>Apply</button>
+                        <input  class="px-3" type="text" name="" id="cupon-field" placeholder="do you have copupon?" >
+                        <button onclick=" addEventToApply()" id="apply-btn" class="btn bg-[#1DD100] px-10 font-bold text-xl text-white hover:bg-[#1dd100]" disabled>Apply</button>
                     </div>
                     <div class="flex justify-around">
                         <h1 class="text-xl font-bold">Grand Total:</h1>
-                        <h1 class="text-xl font-bold">BDT:<span>0</span> </h1>
+                        <h1 class="text-xl font-bold inter">BDT:<span id="grand-total">0</span> </h1>
                     </div>
                     <div class="space-y-3 mt-5">
                         <label class="text-xl font-bold" for="Passenger Name*">Passenger Name*</label>
                         <input class="block w-full py-2 px-1" type="text" name="" id="" placeholder="Enter your name">
                         <label class="text-xl font-bold" for="phone-number">Phone Number*</label>
-                        <input class="block w-full py-2 px-1" type="number" name="" id="" placeholder="Enter your phone number">
+                        <input class="block w-full py-2 px-1" type="number" name="" id="phone-number" placeholder="Enter your phone number">
                         <label class="text-xl font-bold" for="Email-ID">Email ID</label>
                         <input class="block w-full py-2 px-1" type="email" name="email" id="" placeholder="Enter your email id">
-                        <button class="w-full bg-[#1dd100] btn text-xl font-bold" disabled>Next</button>
+                        <button id="next-btn" class="w-full bg-[#1dd100] btn text-xl font-bold" disabled>Next</button>
+                        <div class="flex justify-between underline text-gray-500">
+                            <p><a href="">Terms and Conditions</a></p>
+                            <p><a href="">Cancellation Policy</a></p>
+                        </div>
                     </div>
                 </div>
             </div>

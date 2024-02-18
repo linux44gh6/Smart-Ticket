@@ -28,3 +28,13 @@ function getTotalBookedSet(id){
     const update=elementTextToNumber+1;
     element.innerText=update
 }
+
+//fucntion for ruduce total seat after booking a seat
+function updateTotalSeat(id){
+const totalSeatText=document.getElementById(id);
+const totalSeat=totalSeatText.innerText;
+const totalSeatNumber=parseInt(totalSeat);
+const update=totalSeatNumber-1;
+totalSeatText.innerText=update;
+
+}
