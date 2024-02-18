@@ -103,6 +103,12 @@ nextBtn.addEventListener('click',function(){
    hiddenSection('main');
    hiddenSection('footer');
    removeHidden('modal')
+   const totalSeat=document.getElementById('totalBookedSeat');
+   totalSeat.innerText='0';
+   const btns = document.querySelectorAll('.btn1');
+   for(const btn of btns){
+    const btnId=btn.innerText;
+   }
 })
 
 document.getElementById('modal-btn').addEventListener('click',function(){

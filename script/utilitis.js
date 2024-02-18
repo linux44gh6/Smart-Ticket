@@ -3,7 +3,11 @@ function addBacgourdColor(id){
     const btnId=document.getElementById(id);
     btnId.classList.add('bg-[#1dd100]');
 }
-
+//for remove bg color
+function removeBackground(id){
+    const btnId=document.getElementById(id);
+    btnId.classList.remove('bg-[#1dd100]')
+}
 // for get any elementBy id
 
 function getElemtByid(id){
