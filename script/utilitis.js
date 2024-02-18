@@ -38,3 +38,40 @@ const update=totalSeatNumber-1;
 totalSeatText.innerText=update;
 
 }
+
+
+let clickCount = 0;
+
+// Function to handle button clicks
+function handleButtonClick() {
+    clickCount++; // Increment the counter
+    if (clickCount === 4) {
+        
+    }
+}
+
+//hidden section
+
+function hiddenSection(id){
+    const hidsec=document.getElementById(id);
+    hidsec.classList.add('hidden');
+}
+
+function removeHidden(id){
+    const removeHidhen=document.getElementById(id);
+    removeHidhen.classList.remove('hidden')
+}
+//function for enable
+// function hiddBUtton(){
+// const inputField=document.getElementById('phone-number');
+// const nextbtn=document.getElementById('next-btn');
+// inputField.addEventListener('keyup',function(){
+//     const inputFieldValue=inputField.value;
+//     if(!isNaN(inputFieldValue)){
+//         nextbtn.disable=false;
+//     }
+//     else{
+//         nextbtn.disabled=true
+//     }
+// })
+// }
