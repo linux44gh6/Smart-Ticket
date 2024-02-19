@@ -29,7 +29,7 @@
 <body class="fontFmali">
 
     <!-- //modal -->
-    <div id="modal" class="w-[50%] bg-[#FFFFFF] flex flex-col justify-center items-center mx-auto translate-y-32 p-10 space-y-4 shadow-2xl hidden">
+    <div id="modal" class="lg:w-[50%] bg-[#FFFFFF] flex flex-col justify-center items-center mx-auto translate-y-32 p-10 space-y-4 shadow-2xl hidden">
         <img src="images/success.png" alt="">
         <h1 class="font-bold text-2xl text-[#27ae60]">SUCCESS</h1>
         <p class="text-center  font-bold space-y-2">Thank you for Booking Our Bus Seats. <br> 
@@ -82,12 +82,12 @@
         <!-- banner section -->
         <section>
             <div class="flex flex-col justify-center items-center">
-                <div class="relative text-center lg:translate-y-28 flex flex-col justify-center items-center">
+                <div class="relative text-center translate-y-20 lg:translate-y-28 flex flex-col justify-center items-center">
                     <h1 class="lg:text-6xl font-bold text-white">End-to-End Travel with P <br> <span
                             class="text-[#1DD100]"> Paribahan</span></h1>
                     <p class="lg:text-[18px] lg:w-[690px] text-white font-semibold">You might not be able to become a bird and fly to places – but you surely can fly across the world with our travel agency as your wings.</p>
                 </div>
-                <div class="-mt-32 lg:-mt-40">
+                <div class="-mt-20 lg:-mt-32 lg:-mt-40">
                     <img src="images/banner.png" alt="">
                     <div class="relative  -translate-y-14  lg:-translate-y-[500%] flex justify-center items-center">
                         <button id="scrollButton" class="btn px-7 font-bold bg-[#1DD100] border-none ">Buy Tickets</button>
@@ -97,26 +97,26 @@
         </section>
         <!-- add another section -->
         <section>
-            <div class="flex justify-center gap-5 -translate-y-24">
-                <div class="bg-[#FFFFFF] border-b-2 border-green-600 p-3 py-5 px-5 flex w-[22%] items-center justify-center rounded-lg shadow-2xl gap-2 ">
+            <div class="flex justify-center gap-5 lg:-translate-y-24">
+                <div class="bg-[#FFFFFF] border-b-2 border-green-600 p-3 py-5 px-5 flex lg:w-[22%] items-center justify-center rounded-lg shadow-2xl gap-2 ">
                     <img src="images/people.png" alt="">
                     <div>
-                        <h1 class="font-bold text-4xl inter">500K+</h1>
-                        <p class="font-bold text-gray-400">Registered users</p>
+                        <h1 class="font-bold lg:text-4xl inter">500K+</h1>
+                        <p class="lg:font-bold text-gray-400">Registered users</p>
                     </div>
                 </div>
-                <div  class="bg-[#FFFFFF] border-b-2 border-green-600 p-3 py-2 px-10 flex w-[23%] items-center justify-center rounded-lg shadow-2xl">
+                <div  class="bg-[#FFFFFF] border-b-2 border-green-600 p-3 py-2 px-10 flex lg:w-[23%] items-center justify-center rounded-lg shadow-2xl">
                     <img src="images/ticket-cupon.png" alt="">
                     <div>
-                        <h1 class="font-bold text-4xl inter">1.7 lacks</h1>
-                        <p class="font-bold text-gray-400">Tickets sold</p>
+                        <h1 class="font-bold lg:text-4xl inter">1.7 lacks</h1>
+                        <p class="lg:font-bold text-gray-400">Tickets sold</p>
                     </div>
                 </div>
-                <div  class="bg-[#FFFFFF] border-b-2 border-green-600 p-3 py-2 px-10 flex w-[22%] items-center justify-center rounded-lg shadow-2xl gap-2 "> 
+                <div  class="bg-[#FFFFFF] border-b-2 border-green-600 p-3 py-2 px-10 flex lg:w-[22%] items-center justify-center rounded-lg shadow-2xl gap-2 "> 
                     <img src="images/stoppage.png" alt="">
                     <div>
-                        <h1 class="font-bold text-4xl inter">80K+</h1>
-                        <p class="font-bold text-gray-400">Rental partners</p>
+                        <h1 class="font-bold lg:text-4xl inter">80K+</h1>
+                        <p class="lg:font-bold text-gray-400">Rental partners</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
         <h1 class="text-center text-4xl font-bold  mt-0 mb-12">Best offers for you</h1>
         <section>
             <div class="flex flex-col lg:flex-row gap-5 justify-center items-center">
-                <div class="bg-[#ffbf0f] rounded-3xl flex">
+                <div class="bg-[#ffbf0f] rounded-3xl flex w-full lg:w-1/2">
                     <div class="flex flex-col justify-center p-5 lg:px-20 ">
                         <h1 class="text-4xl font-extrabold">15% OFF</h1>
                         <h2 class="text-[20px] font-bold">on your next purchase</h2>
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="bg-[#f78c9c] rounded-3xl flex ">
+                    <d iv class="bg-[#f78c9c] rounded-3xl flex w-full ">
                         <div class="flex flex-col justify-center  lg:px-16">
                             <h1 class="text-4xl font-extrabold">20% OFF</h1>
                             <h2 class="text-[20px] font-bold">on your next purchase</h2>
@@ -169,7 +169,7 @@
             </div>
 
             <div>
-                <div class="flex justify-between">
+                <div class="flex flex-col-reverse lg:flex-row justify-between">
                     <div class="flex justify-between w-full items-center lg:-mt-60">
                         <div>
                             <div class="flex items-center gap-2">
@@ -194,18 +194,20 @@
 
                     <div class="flex items-center lg:ps-[00px] w-2/6">
                         <div>
-                            <img src="images/info-devider.png" alt="">
+                            <img class="rotate-45 lg:rotate-0" src="images/info-devider.png" alt="">
                         </div>
                         <div class="text-center">
                             <img src="images/fare.png" alt="">
-                            <h1 class="text-2xl font-bold inter">550 Taka</h1>
+                            <div class="flex flex-row lg:flex-col">
+                                <h1 class="text-2xl font-bold inter">550 Taka</h1>
                             <p class="font-bold text-gray-400">Per Seat</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class=" -translate-y-64 w-9/12 space-y-9 p-2">
+                <div class=" -translate-y-64 lg:w-9/12 space-y-9 p-2">
                     <div class="flex justify-between">
                         <h1 class="font-bold text-gray-400 cursor-pointer">Route</h1>
                         <h1 class="font-bold">Dhaka-Sylhet</h1>
@@ -214,7 +216,7 @@
                         <h1 class="font-bold text-gray-400 cursor-pointer">Departure Time</h1>
                         <h1 class="font-bold inter">9:00 AM</h1>
                     </div>
-                    <div class="flex justify-around">
+                    <div class="flex flex-col lg:flex-row justify-around w-full lg:mt0">
                         <button class="btn">Boarding Point - Laxmipur</button>
                         <button class="btn">Dropping Point - Bogura</button>
                         <button class="btn">Est. Time - 11 Hour</button>
@@ -227,7 +229,7 @@
         <!-- seat section and selection part -->
         <section id="targetSection" class="-mt-36">
             <div class="flex flex-col lg:flex-row justify-between gap-5">
-                <div class="w-[59%]">
+                <div class="lg:w-[59%]">
                     <h1 class="text-2xl font-bold mb-5">Select Your Seat</h1>
                     <div class="flex justify-between w-full mb-3">
                         <h1 class="flex font-bold text-gray-400"><span><img src="images/seat-gray.png" alt=""></span>Available</h1>
@@ -310,24 +312,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[40%]  border-l border-dashed  border-[#1dd100]">
+                <div class="lg:w-[40%]  border-l border-dashed  border-[#1dd100]">
                     <h1 class="text-2xl font-bold mb-5">Select Your Seat</h1>
                     <div class="flex justify-around mb-5">
-                      <div id="seat-booked">
+                      <div >
                         <h1 class="text-xl font-bold inter">seat<span id="totalBookedSeat" class="bg-[#1dd100] px-2 text-white rounded-sm">0</span></h1>
+                        <div id="seat-booked">
+
+                        </div>
                       </div>
-                      <div id="seat-class">
+                      <div >
                         <h1 class="text-xl font-bold">Class</h1>
+                        <div id="seat-class">
+
+                        </div>
                       </div>
-                      <div id="seat-price" class="">
+                      <div  class="">
                        <h1 class="text-xl font-bold">Price</h1>
+                       <div id="seat-price">
+
+                       </div>
                       </div>
                     </div>
                     <div class="flex justify-between lg:px-14 mb-5">
                         <h1 class="text-xl font-bold" >Total Price</h1>
                         <h1 class="text-xl font-bold inter">BDT:<span id="totalCost">0</span> </h1>
                     </div>
+                    <h1 id="CouponText" class="bg-[#27ae60] text-white w-9/12 mx-auto text-center py-2 rounded-lg hidden">your Coupon applyed successfully</h1>
                     <div class="flex justify-between lg:px-14 mb-5">
+                       
                         <input  class="px-3" type="text" name="" id="cupon-field" placeholder="do you have copupon?" >
                         <button  id="apply-btn" class="btn bg-[#1DD100] px-10 font-bold text-xl text-white hover:bg-[#1dd100]" disabled>Apply</button>
                     </div>
@@ -337,7 +350,7 @@
                     </div>
                     <div class="space-y-3 mt-5">
                         <label class="text-xl font-bold" for="Passenger Name*">Passenger Name*</label>
-                        <input class="block w-full py-2 px-1" type="text" name="" id="" placeholder="Enter your name">
+                        <input class="block w-full py-2 px-1" type="text" name="" id="" placeholder="Enter your name" required>
                         <label class="text-xl font-bold" for="phone-number">Phone Number*</label>
                         <input class="block w-full py-2 px-1" type="number" name="" id="phone-number" placeholder="Enter your phone number" required>
                         <label class="text-xl font-bold" for="Email-ID">Email ID</label>

@@ -6,6 +6,7 @@ scrollbtn.addEventListener('click', function () {
     targetSection.scrollIntoView({ behavior: 'smooth' })
 })
 
+
 // add evet to the  seat btn;
 const btns = document.querySelectorAll('.btn1');
 for (const btn of btns) {
@@ -77,6 +78,7 @@ document.getElementById('apply-btn').addEventListener('click',function(){
        getElemtByid('grand-total').innerText=updateGrandTotal;
        hiddenSection('apply-btn')
        hiddenSection('cupon-field')
+       removeHidden('CouponText')
      }
      else if(copuponSplit==='Couple 20'){
         const grandTotal=getElemtByid('grand-total').innerText;
@@ -87,8 +89,11 @@ document.getElementById('apply-btn').addEventListener('click',function(){
        hiddenSection('apply-btn')
        hiddenSection('cupon-field')
      }
+     else{
+      alert('Please Enter the Correct copuppon')
+     }
   
-},{once:true})
+})
 
 
 //add disabled attribute so that the user cannot select more then 4 ticket
@@ -96,20 +101,43 @@ document.getElementById('apply-btn').addEventListener('click',function(){
 const totalSeat=document.getElementById('totalBookedSeat').innerText;
 const totalSeatNumber=parseInt(totalSeat);
 
-//oper modal
+//open modal
 
 const nextBtn=document.getElementById('next-btn');
+
 nextBtn.addEventListener('click',function(){
+  const inputFiled=document.getElementById('phone-number');
+const inputFieldValue=inputFiled.value;
+const len=inputFieldValue.length;
+  
    hiddenSection('main');
    hiddenSection('footer');
    removeHidden('modal')
+  
+   getElementWithID('total-seat1')
    const totalSeat=document.getElementById('totalBookedSeat');
    totalSeat.innerText='0';
    const btns = document.querySelectorAll('.btn1');
    for(const btn of btns){
     const btnId=btn.innerText;
+    removeBackground(btnId)
+    btn.addEventListener('click',function(){
+      console.log('clicked')
+    })
+    ticket=0
    }
+   removeAppendChild('seat-booked');
+   removeAppendChild('seat-class');
+   removeAppendChild('seat-price');
+   updateInputFiledValue('phone-number')
+   updatePRice('grand-total');
+   updatePRice('totalCost');
+  removeHidden('apply-btn')
+  removeHidden('cupon-field')
+  hiddenSection('CouponText')
+  updateInputFiledValue('cupon-field');
 })
+
 
 document.getElementById('modal-btn').addEventListener('click',function(){
     hiddenSection('modal');

@@ -44,15 +44,7 @@ totalSeatText.innerText=update;
 }
 
 
-let clickCount = 0;
 
-// Function to handle button clicks
-function handleButtonClick() {
-    clickCount++; // Increment the counter
-    if (clickCount === 4) {
-        
-    }
-}
 
 //hidden section
 
@@ -61,21 +53,37 @@ function hiddenSection(id){
     hidsec.classList.add('hidden');
 }
 
+
 function removeHidden(id){
     const removeHidhen=document.getElementById(id);
     removeHidhen.classList.remove('hidden')
 }
-//function for enable
-// function hiddBUtton(){
-// const inputField=document.getElementById('phone-number');
-// const nextbtn=document.getElementById('next-btn');
-// inputField.addEventListener('keyup',function(){
-//     const inputFieldValue=inputField.value;
-//     if(!isNaN(inputFieldValue)){
-//         nextbtn.disable=false;
-//     }
-//     else{
-//         nextbtn.disabled=true
-//     }
-// })
-// }
+
+
+function getElementWithID(id){
+    const element=document.getElementById(id);
+    const elementValue=element.innerText;
+    element.innerText='40';
+    
+}
+
+
+function removeAppendChild(id){
+    const parent=document.getElementById(id);
+    for (let i = 0; i <= 4; i++) {
+        if (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+}
+
+
+function updateInputFiledValue(id){
+    const inputvalue=document.getElementById(id);
+    inputvalue.value='';
+}
+
+function updatePRice(id){
+    const update=document.getElementById(id);
+    update.innerText='0';
+}
