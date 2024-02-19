@@ -124,12 +124,16 @@ const len=inputFieldValue.length;
    totalSeat.innerText='0';
    const btns = document.querySelectorAll('.btn1');
    for(const btn of btns){
+    
     const btnId=btn.innerText;
     removeBackground(btnId)
     btn.addEventListener('click',function(){
       console.log('clicked')
     })
     ticket=0
+    btn.addEventListener('click',function(){
+
+    })
    }
    removeAppendChild('seat-booked');
    removeAppendChild('seat-class');
