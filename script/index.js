@@ -141,6 +141,9 @@ const len=inputFieldValue.length;
   removeHidden('cupon-field')
   hiddenSection('CouponText')
   updateInputFiledValue('cupon-field');
+  addAttribute('apply-btn')
+  addAttribute('next-btn')
+  count=0;
 })
 
 

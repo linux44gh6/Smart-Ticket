@@ -87,3 +87,9 @@ function updatePRice(id){
     const update=document.getElementById(id);
     update.innerText='0';
 }
+
+//add
+function addAttribute(id){
+    const btn=document.getElementById(id);
+  btn.disabled = true;
+}
