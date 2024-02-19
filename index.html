@@ -314,10 +314,10 @@
                 </div>
                 <div class="lg:w-[40%]  border-l border-dashed  border-[#1dd100]">
                     <h1 class="text-2xl font-bold mb-5">Select Your Seat</h1>
-                    <div class="flex justify-around mb-5">
+                    <div class="flex justify-around mb-5 border-b-2 border-dashed border-[#1dd100]">
                       <div >
                         <h1 class="text-xl font-bold inter">seat<span id="totalBookedSeat" class="bg-[#1dd100] px-2 text-white rounded-sm">0</span></h1>
-                        <div id="seat-booked">
+                        <div id="seat-booked" class="inter">
 
                         </div>
                       </div>
@@ -329,7 +329,7 @@
                       </div>
                       <div  class="">
                        <h1 class="text-xl font-bold">Price</h1>
-                       <div id="seat-price">
+                       <div id="seat-price" class="inter font-bold">
 
                        </div>
                       </div>
@@ -338,7 +338,10 @@
                         <h1 class="text-xl font-bold" >Total Price</h1>
                         <h1 class="text-xl font-bold inter">BDT:<span id="totalCost">0</span> </h1>
                     </div>
-                    <h1 id="CouponText" class="bg-[#27ae60] text-white w-9/12 mx-auto text-center py-2 rounded-lg hidden">your Coupon applyed successfully</h1>
+                   <div  id="CouponText" class="hidden">
+                    <h1 class="bg-[#27ae60] text-white w-9/12 mx-auto text-center py-2 rounded-lg ">your Coupon applyed successfully</h1>
+                    <h1  class="bg-[#27ae60] text-white w-9/12 mx-auto text-center py-2 rounded-lg inter">You got: <span id="discount">0</span> Taka</h1>
+                   </div>
                     <div class="flex justify-between lg:px-14 mb-5">
                        
                         <input  class="px-3" type="text" name="" id="cupon-field" placeholder="do you have copupon?" >

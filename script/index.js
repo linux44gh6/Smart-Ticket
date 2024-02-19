@@ -73,6 +73,8 @@ document.getElementById('apply-btn').addEventListener('click',function(){
      if(copuponSplit==='NEW15'){
          const grandTotal=getElemtByid('grand-total').innerText; 
         const grandTotalNumber=parseFloat(grandTotal);
+        const disocutText=document.getElementById('discount');
+        disocutText.innerText=(grandTotalNumber*0.15);
         const updateGrandTotal=grandTotalNumber-(grandTotalNumber*0.15);
         console.log(updateGrandTotal);
        getElemtByid('grand-total').innerText=updateGrandTotal;
@@ -83,11 +85,14 @@ document.getElementById('apply-btn').addEventListener('click',function(){
      else if(copuponSplit==='Couple 20'){
         const grandTotal=getElemtByid('grand-total').innerText;
         const grandTotalNumber=parseFloat(grandTotal);
+        const disocutText=document.getElementById('discount');
+        disocutText.innerText=(grandTotalNumber*0.20);
         const updateGrandTotal=grandTotalNumber-(grandTotalNumber*0.20);
         console.log(updateGrandTotal);
        getElemtByid('grand-total').innerText=updateGrandTotal;
        hiddenSection('apply-btn')
        hiddenSection('cupon-field')
+       removeHidden('CouponText')
      }
      else{
       alert('Please Enter the Correct copuppon')
